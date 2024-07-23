@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 import Company from "../icons/Company"
 import Location from "../icons/Location"
 import Road from "../icons/Road"
@@ -13,7 +15,7 @@ function CarDetails(props) {
 
   return (
     <div className={styles.container}>
-        <img className={styles.image} src={image} />
+        <Image className={styles.image} src={image} />
         <h3 className={styles.header}>{name} {model}</h3>
 
         <div className={styles.details}>

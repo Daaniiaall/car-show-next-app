@@ -15,7 +15,7 @@ function Layout({children}) {
         {children}
       </div>
       <footer className={styles.footer}>
-        Developed by <a href="https://github.com/Daaniiaall" target="_blank">Danial Momenpour</a> | Next.js Project
+        Developed by <a href="https://github.com/Daaniiaall">Danial Momenpour</a> | Next.js Project
       </footer>
     </>
   );

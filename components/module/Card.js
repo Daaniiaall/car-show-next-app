@@ -1,5 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
+
 import Location from "../icons/Location";
+
 import styles from "./Card.module.css";
 
 function Card({ car }) {
@@ -8,7 +11,7 @@ function Card({ car }) {
   return (
     <Link href={`/cars/${id}`}>
       <div className={styles.container}>
-        <img className={styles.image} src={image} />
+        <Image className={styles.image} src={image} />
         <h4 className={styles.title}>{`${name} ${model}`}</h4>
         <p className={styles.detail}>{`${year} . ${distance}KM`}</p>
         <div className={styles.footer}>
